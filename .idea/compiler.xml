@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="kelari-model" />
+        <module name="kelari-annotation" />
+        <module name="kelari-core" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="modulo-api" target="1.8" />
+      <module name="modulo-core" target="1.8" />
+      <module name="modulo-persistencia" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
