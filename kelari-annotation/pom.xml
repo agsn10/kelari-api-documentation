@@ -8,7 +8,7 @@
     <version>1.0.0</version>
   </parent>
     
-  <groupId>io.github.kelari.annotation</groupId>
+  <groupId>io.github.kelari.annotation.v3</groupId>
   <artifactId>kelari-annotation</artifactId>
   <version>1.0.0</version>
   <name>kelari-annotation</name>
