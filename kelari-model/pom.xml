@@ -10,7 +10,7 @@
     <version>1.0.0</version>
   </parent>
 
-  <groupId>io.github.kelari.model</groupId>
+  <groupId>io.github.kelari.model.v3</groupId>
   <artifactId>kelari-model</artifactId>
   <version>1.0.0</version>
   <name>kelari-model</name>
