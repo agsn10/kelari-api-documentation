@@ -1,4 +1,4 @@
-package io.github.kelari.annotation.v3;
+package io.github.kelari.annotation.v3.servers;
 
 import io.github.kelari.annotation.v3.extensions.Extension;
 

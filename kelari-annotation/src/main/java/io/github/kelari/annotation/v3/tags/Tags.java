@@ -1,6 +1,6 @@
-package io.github.kelari.annotation.v3.operations;
+package io.github.kelari.annotation.v3.tags;
 
-import io.github.kelari.annotation.v3.extensions.Tag;
+import io.github.kelari.annotation.v3.operations.Operation;
 
 import static java.lang.annotation.ElementType.ANNOTATION_TYPE;
 import static java.lang.annotation.ElementType.METHOD;

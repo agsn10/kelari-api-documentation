@@ -1,6 +1,5 @@
-package io.github.kelari.annotation.v3.operations;
+package io.github.kelari.annotation.v3.servers;
 
-import io.github.kelari.annotation.v3.ServerVariable;
 import io.github.kelari.annotation.v3.extensions.Extension;
 
 import static java.lang.annotation.ElementType.*;

@@ -13,6 +13,11 @@
     <module>kelari-core</module>
     <module>kelari-annotation</module>
     <module>kelari-model</module>
+    <module>kelari-helidon-web-ui</module>
+    <module>kelari-maven-plugin</module>
+    <module>kelari-quarkus-web-ui</module>
+    <module>kelari-spring-starter-web-ui</module>
+    <module>kelari-spring-starter-webflux-ui</module>
   </modules>
   
   <build>

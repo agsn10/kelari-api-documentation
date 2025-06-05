@@ -1,4 +1,7 @@
-package io.github.kelari.annotation.v3.extensions;
+package io.github.kelari.annotation.v3.tags;
+
+import io.github.kelari.annotation.v3.ExternalDocumentation;
+import io.github.kelari.annotation.v3.extensions.Extension;
 
 import static java.lang.annotation.ElementType.ANNOTATION_TYPE;
 import static java.lang.annotation.ElementType.METHOD;
