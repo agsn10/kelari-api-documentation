@@ -6,9 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="kelari-spring-starter-web-ui" />
+        <module name="kelari-helidon-web-ui" />
+        <module name="kelari-quarkus-web-ui" />
+        <module name="kelari-maven-plugin" />
         <module name="kelari-model" />
         <module name="kelari-annotation" />
         <module name="kelari-core" />
+        <module name="kelari-spring-starter-webflux-ui" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

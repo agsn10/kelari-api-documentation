@@ -1,10 +1,12 @@
 package io.github.kelari.annotation.v3.operations;
 
+import io.github.kelari.annotation.v3.ExternalDocumentation;
 import io.github.kelari.annotation.v3.extensions.Extension;
 import io.github.kelari.annotation.v3.parameters.Parameter;
 import io.github.kelari.annotation.v3.parameters.RequestBody;
 import io.github.kelari.annotation.v3.responses.ApiResponse;
 import io.github.kelari.annotation.v3.security.SecurityRequirement;
+import io.github.kelari.annotation.v3.servers.Server;
 
 import static java.lang.annotation.ElementType.ANNOTATION_TYPE;
 import static java.lang.annotation.ElementType.METHOD;

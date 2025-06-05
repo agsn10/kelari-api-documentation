@@ -1,4 +1,4 @@
-package io.github.kelari.annotation.v3;
+package io.github.kelari.annotation.v3.info;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

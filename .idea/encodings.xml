@@ -5,7 +5,17 @@
     <file url="file://$PROJECT_DIR$/kelari-annotation/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/kelari-core/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/kelari-core/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/kelari-helidon-web-ui/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/kelari-helidon-web-ui/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/kelari-maven-plugin/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/kelari-maven-plugin/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/kelari-model/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/kelari-model/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/kelari-quarkus-web-ui/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/kelari-quarkus-web-ui/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/kelari-spring-starter-web-ui/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/kelari-spring-starter-web-ui/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/kelari-spring-starter-webflux-ui/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/kelari-spring-starter-webflux-ui/src/main/resources" charset="UTF-8" />
   </component>
 </project>

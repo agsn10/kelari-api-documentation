@@ -1,6 +1,7 @@
 package io.github.kelari.annotation.v3.callbacks;
 
 import io.github.kelari.annotation.v3.extensions.Extension;
+import io.github.kelari.annotation.v3.operations.Operation;
 
 import java.lang.annotation.Inherited;
 import java.lang.annotation.Repeatable;
