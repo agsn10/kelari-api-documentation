@@ -1,6 +1,7 @@
 package io.github.kelari.annotation.v3.links;
 
 import io.github.kelari.annotation.v3.extensions.Extension;
+import io.github.kelari.annotation.v3.servers.Server;
 
 import static java.lang.annotation.ElementType.ANNOTATION_TYPE;
 import static java.lang.annotation.RetentionPolicy.RUNTIME;

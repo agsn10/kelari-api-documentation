@@ -1,5 +1,7 @@
 package io.github.kelari.annotation.v3.headers;
 
+import io.github.kelari.annotation.v3.media.Schema;
+
 import static java.lang.annotation.RetentionPolicy.RUNTIME;
 
 import java.lang.annotation.Inherited;
@@ -83,5 +85,5 @@ public @interface Header {
      *
      * @return The schema of the header.
      */
-    io.swagger.v3.oas.annotations.media.Schema schema() default @Schema;
+    Schema schema() default @Schema;
 }
