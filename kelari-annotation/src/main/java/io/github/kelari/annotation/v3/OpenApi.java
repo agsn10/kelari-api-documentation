@@ -1,8 +1,9 @@
 package io.github.kelari.annotation.v3;
 
 import io.github.kelari.annotation.v3.extensions.Extension;
-import io.github.kelari.annotation.v3.extensions.Tag;
-import io.github.kelari.annotation.v3.operations.Server;
+import io.github.kelari.annotation.v3.info.Info;
+import io.github.kelari.annotation.v3.tags.Tag;
+import io.github.kelari.annotation.v3.servers.Server;
 import io.github.kelari.annotation.v3.security.SecurityRequirement;
 
 import java.lang.annotation.ElementType;
