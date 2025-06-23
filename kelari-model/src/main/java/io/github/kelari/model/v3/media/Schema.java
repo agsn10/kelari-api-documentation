@@ -178,6 +178,14 @@ public class Schema<T> implements Serializable, IndentedString {
         return this;
     }
 
+    public List<T> get_enum() {
+        return _enum;
+    }
+
+    public void set_enum(List<T> _enum) {
+        this._enum = _enum;
+    }
+
     /**
      * Returns the schema item definition (typically used for array item types).
      *
