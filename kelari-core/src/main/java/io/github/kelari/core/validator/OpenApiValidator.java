@@ -1,6 +1,5 @@
 package io.github.kelari.core.validator;
 
-import com.sun.net.httpserver.Request;
 import io.github.kelari.core.model.Response;
 import io.github.kelari.model.v3.OpenAPI;
 import io.github.kelari.model.v3.responses.ApiResponse;

@@ -1,5 +1,7 @@
 package io.github.kelari.model.v3.enums;
 
+import com.fasterxml.jackson.annotation.JsonCreator;
+
 /**
  * Enumeration representing the possible locations of a security scheme in OpenAPI 3.0.1 specification.
  * <p>
@@ -30,7 +32,7 @@ package io.github.kelari.model.v3.enums;
  *
  * @author <a href="mailto:agsn10@hotmail.com">Antonio Neto</a> [<()>] – Initial implementation.
  * @since 1.0
- * @see SecurityScheme
+ * @see io.github.kelari.model.v3.security.SecurityScheme
  * @see <a href="https://spec.openapis.org/oas/v3.0.1#security-scheme-object">OpenAPI 3.0.1 – Security Scheme Object</a>
  * @copyright 2025 Kelari. All rights reserved.
  */
@@ -68,5 +70,13 @@ public enum SecuritySchemeInEnum {
     @Override
     public String toString() {
         return String.valueOf(value);
+    }
+
+    @JsonCreator
+    public static SecuritySchemeInEnum fromValue(String value) {
+        for (SecuritySchemeInEnum location : SecuritySchemeInEnum.values())
+            if (location.value.equalsIgnoreCase(value))
+                return location;
+        throw new IllegalArgumentException("Unknown SecuritySchemeInEnum value: " + value);
     }
 }
