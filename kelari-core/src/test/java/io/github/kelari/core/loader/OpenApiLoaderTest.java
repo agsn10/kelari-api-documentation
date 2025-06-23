@@ -24,7 +24,7 @@ class OpenApiLoaderTest {
         );
 
         String message = exception.getMessage();
-        assertTrue(message.contains("File not found"));
+        assertTrue(message.contains("Failed to load OpenAPI from source"));
     }
 
     @Test
