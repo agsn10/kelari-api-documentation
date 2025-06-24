@@ -1,6 +1,7 @@
 package io.github.kelari.model.v3.operations;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import io.github.kelari.model.v3.ExternalDocumentation;
 import io.github.kelari.model.v3.callbacks.Callback;
 import io.github.kelari.model.v3.parameters.Parameter;
@@ -79,6 +80,7 @@ public class Operation implements Serializable, IndentedString {
     private ExternalDocumentation externalDocs = null;
     private String operationId = null;
     private List<Parameter> parameters = null;
+    @JsonProperty("requestBody")
     private RequestBody requestBody = null;
     private ApiResponses responses = null;
     private Map<String, Callback> callbacks = null;
@@ -222,6 +224,65 @@ public class Operation implements Serializable, IndentedString {
         return this;
     }
 
+    public RequestBody getRequestBody() {
+        return requestBody;
+    }
+    public void setRequestBody(RequestBody requestBody) {
+        this.requestBody = requestBody;
+    }
+    public Operation requestBody(RequestBody requestBody) {
+        this.requestBody = requestBody;
+        return this;
+    }
+
+    public List<Parameter> getParameters() {
+        return parameters;
+    }
+    public void setParameters(List<Parameter> parameters) {
+        this.parameters = parameters;
+    }
+
+    public ApiResponses getResponses() {
+        return responses;
+    }
+    public void setResponses(ApiResponses responses) {
+        this.responses = responses;
+    }
+
+    public Map<String, Callback> getCallbacks() {
+        return callbacks;
+    }
+    public void setCallbacks(Map<String, Callback> callbacks) {
+        this.callbacks = callbacks;
+    }
+
+    public Boolean getDeprecated() {
+        return deprecated;
+    }
+    public void setDeprecated(Boolean deprecated) {
+        this.deprecated = deprecated;
+    }
+    public Operation deprecated(Boolean deprecated) {
+        this.deprecated = deprecated;
+        return this;
+    }
+
+    public List<SecurityRequirement> getSecurity() {
+        return security;
+    }
+    public void setSecurity(List<SecurityRequirement> security) {
+        this.security = security;
+    }
+    public Operation security(SecurityRequirement security) {
+        if(Objects.isNull(this.security))
+            this.security = new ArrayList<>(0);
+        this.security.add(security);
+        return this;
+    }
+
+    public List<Server> getServers() {
+        return servers;
+    }
     /**
      * Sets the list of servers for this operation.
      *

@@ -1,6 +1,8 @@
-# Kelari
+![Kelari - API Documentation](img/kelari_API_Doc.png) 
 
-**Kelari** é um projeto modular em Java para representar e trabalhar com a [OpenAPI Specification (OAS)](https://spec.openapis.org/). Ele fornece uma base extensível para análise, geração e visualização de documentos OpenAPI, com suporte a diferentes frameworks.
+**Kelari - API Documentation** é um projeto modular em Java para representar e trabalhar com a [OpenAPI Specification (OAS)](https://spec.openapis.org/). Ele fornece uma base extensível para análise, geração e visualização de documentos OpenAPI, com suporte a diferentes frameworks.
+
+---
 
 ## ✨ Visão Geral
 
@@ -12,6 +14,8 @@ O objetivo do **Kelari** é oferecer:
 - Plugins e integrações para automatizar a geração da documentação em diferentes estágios do build.
 - Interfaces web interativas baseadas em OpenAPI para diversos frameworks (Spring, Quarkus, Helidon).
 - Suporte modular para uso em diferentes tipos de aplicações (REST síncronas ou reativas).
+
+---
 
 ## 📦 Módulos
 

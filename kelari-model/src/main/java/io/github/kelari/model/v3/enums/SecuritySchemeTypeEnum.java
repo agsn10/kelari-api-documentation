@@ -1,5 +1,8 @@
 package io.github.kelari.model.v3.enums;
 
+import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonValue;
+
 /**
  * Enumeration that represents the security scheme types supported by the OpenAPI 3.0.1 specification.
  * <p>
@@ -32,8 +35,8 @@ package io.github.kelari.model.v3.enums;
  *
  * @author <a href="mailto:agsn10@hotmail.com">Antonio Neto</a> [<()>] – Initial implementation.
  * @since 1.0
- * @see OAuthFlow
- * @see SecurityScheme
+ * @see io.github.kelari.model.v3.security.OAuthFlow
+ * @see io.github.kelari.model.v3.security.SecurityScheme
  * @see <a href="https://spec.openapis.org/oas/v3.0.1#security-scheme-object">OpenAPI 3.0.1 – Security Scheme Object</a>
  * @copyright 2025 Kelari. All rights reserved.
  */
@@ -73,8 +76,23 @@ public enum SecuritySchemeTypeEnum {
      *
      * @return the string value of the scheme type
      */
+    @JsonValue
     @Override
     public String toString() {
         return String.valueOf(value);
+    }
+
+    /**
+     * Factory method to map the string value to the enum value.
+     *
+     * @param value the string value to be mapped
+     * @return the corresponding enum
+     */
+    @JsonCreator
+    public static SecuritySchemeTypeEnum fromString(String value) {
+        for (SecuritySchemeTypeEnum type : SecuritySchemeTypeEnum.values())
+            if (type.value.equalsIgnoreCase(value))
+                return type;
+        throw new IllegalArgumentException("Unknown security scheme type: " + value);
     }
 }

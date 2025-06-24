@@ -77,7 +77,7 @@ public class Schema<T> implements Serializable, IndentedString {
     private String type = null;
     private Schema not = null;
     private Map<String, Schema> properties = null;
-    private Object additionalProperties = null;
+    private Schema additionalProperties;
     private String description = null;
     private String format = null;
     private String $ref = null;
@@ -176,6 +176,14 @@ public class Schema<T> implements Serializable, IndentedString {
     public Schema types(Set<String> types) {
         this.types = types;
         return this;
+    }
+
+    public List<T> get_enum() {
+        return _enum;
+    }
+
+    public void set_enum(List<T> _enum) {
+        this._enum = _enum;
     }
 
     /**
@@ -982,6 +990,14 @@ public class Schema<T> implements Serializable, IndentedString {
         return this;
     }
 
+    public Map<String, Schema> getProperties() {
+        return properties;
+    }
+
+    public void setProperties(Map<String, Schema> properties) {
+        this.properties = properties;
+    }
+
     /**
      * Returns the definition of additional properties allowed by the schema.
      * <p>
@@ -996,7 +1012,7 @@ public class Schema<T> implements Serializable, IndentedString {
      *
      * @return an {@code Object} representing additional properties, either {@code Boolean} or {@link Schema}.
      */
-    public Object getAdditionalProperties() {
+    public Schema getAdditionalProperties() {
         return additionalProperties;
     }
     /**
@@ -1008,7 +1024,7 @@ public class Schema<T> implements Serializable, IndentedString {
      * @param additionalProperties the value indicating allowed additional properties
      * @throws IllegalArgumentException if the argument is neither a {@code Boolean} nor a {@link Schema}
      */
-    public void setAdditionalProperties(Object additionalProperties) {
+    public void setAdditionalProperties(Schema additionalProperties) {
         if (OpenApiPredicates.SCHEMA_INVALID_ADDITIONAL_PROPERTIES.test(additionalProperties))
             throw new IllegalArgumentException("additionalProperties must be either a Boolean or a Schema instance");
         this.additionalProperties = additionalProperties;
@@ -1016,14 +1032,14 @@ public class Schema<T> implements Serializable, IndentedString {
     /**
      * Fluent-style method for setting {@code additionalProperties}.
      * <p>
-     * This is a convenience method for chaining. Internally delegates to {@link #setAdditionalProperties(Object)}.
+     * This is a convenience method for chaining. Internally delegates to {@link #setAdditionalProperties(Schema)}.
      * </p>
      *
      * @param additionalProperties the value indicating allowed additional properties
      * @return this {@link Schema} instance
      * @throws IllegalArgumentException if the argument is invalid
      */
-    public Schema additionalProperties(Object additionalProperties) {
+    public Schema additionalProperties(Schema additionalProperties) {
         setAdditionalProperties(additionalProperties);
         return this;
     }
