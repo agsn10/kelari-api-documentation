@@ -26,6 +26,17 @@
       <artifactId>kelari-model</artifactId>
       <version>1.0.0</version>
     </dependency>
+    <dependency>
+      <groupId>io.github.kelari.annotation.v3</groupId>
+      <artifactId>kelari-annotation</artifactId>
+      <version>1.0.0</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.reflections</groupId>
+      <artifactId>reflections</artifactId>
+      <version>0.10.2</version>
+    </dependency>
 
     <dependency>
       <groupId>com.fasterxml.jackson.core</groupId>
